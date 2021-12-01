@@ -1,0 +1,182 @@
+$color-blanco: #ebebeb;
+$color-principal: #2c2c2c;
+$color-second: #c5a95f;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+body{
+    background-image: url(../img/fondotesitura.jpg)!important;
+}
+
+.bg-second {
+    background: $color-second;
+}
+
+.btn-tesitura {
+    background: $color-second;
+    border: 1px solid $color-blanco;
+
+    &:hover {
+
+        background: $color-blanco;
+        border: 1px solid $color-second;
+        color: $color-principal;
+
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.color-white {
+    color: $color-blanco;
+}
+
+.color-s {
+    color: $color-second;
+}
+
+.bg-p {
+    background: $color-principal;
+}
+
+.nav-bar-second {
+    background: $color-principal;
+}
+
+.home {
+    background: $color-principal;
+}
+
+.img-hover {
+    background: #2c2c2c;
+    width: 100%;
+    height: 100%;
+}
+
+.date-new {
+    background: $color-second;
+}
+
+.pic {
+
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border-radius: 50%;
+    position: relative;
+    z-index: 99 !important;
+
+}
+
+.pic::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border: 2px solid $color-second;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    border-radius: 50%;
+    animation: wave 1.5s infinite linear;
+    z-index: 1 !important;
+
+}
+
+.pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%
+}
+
+@keyframes wave {
+    to {
+        transform: scale(1.5);
+        opacity: 0
+    }
+}
+
+main {
+
+    .tabs-options {
+        // padding: 5.625rem;
+
+        .container {
+            .titulo-seccion {
+                h2 {
+                    text-align: center;
+                }
+            }
+
+            .container-tabs {
+                // margin-top: 2.5rem;
+
+                .tabs {
+                    font-weight: 600;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    list-style: none;
+                    display: flex;
+                    justify-content: center;
+
+                    li {
+
+                        margin: 0 5px;
+
+                        a {
+                            font-size: 0.75rem;
+                            padding: 0 .5rem 1.125rem .5rem;
+                            display: flex;
+                            align-items: center;
+
+                            justify-content: center;
+                            cursor: pointer;
+                            text-decoration: none;
+                            -webkit-transition: all .3s ease;
+                            -o-transition: all .3s ease;
+                            transition: all .3s ease;
+                            border-bottom: 2px solid transparent;
+                            color: $color-blanco;
+
+                            &:hover {
+                                color: $color-second;
+                                background: $color-principal;
+                            }
+                        }
+
+                        &.active {
+                            color: $color-second;
+                            background: $color-second;
+                        }
+
+                    }
+                }
+            }
+
+            .contenido {
+
+                margin: 0 auto;
+                margin-top: 2.5rem;
+
+                >div {
+                    display: none;
+                    -webkit-transition: all .3s ease;
+                    -o-transition: all .3s ease;
+                    transition: all .3s ease;
+                }
+
+                .active {
+                    display: block;
+                }
+
+         
+            }
+        }
+    }
+}

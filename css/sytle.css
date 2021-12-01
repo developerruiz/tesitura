@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+body {
+  background-image: url(../img/fondotesitura.jpg) !important;
+}
+
+.bg-second {
+  background: #c5a95f;
+}
+
+.btn-tesitura {
+  background: #c5a95f;
+  border: 1px solid #ebebeb;
+}
+
+.btn-tesitura:hover {
+  background: #ebebeb;
+  border: 1px solid #c5a95f;
+  color: #2c2c2c;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.color-white {
+  color: #ebebeb;
+}
+
+.color-s {
+  color: #c5a95f;
+}
+
+.bg-p {
+  background: #2c2c2c;
+}
+
+.nav-bar-second {
+  background: #2c2c2c;
+}
+
+.home {
+  background: #2c2c2c;
+}
+
+.img-hover {
+  background: #2c2c2c;
+  width: 100%;
+  height: 100%;
+}
+
+.date-new {
+  background: #c5a95f;
+}
+
+.pic {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  border-radius: 50%;
+  position: relative;
+  z-index: 99 !important;
+}
+
+.pic::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border: 2px solid #c5a95f;
+  left: 0;
+  top: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  -webkit-animation: wave 1.5s infinite linear;
+          animation: wave 1.5s infinite linear;
+  z-index: 1 !important;
+}
+
+.pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes wave {
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes wave {
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+main .tabs-options .container .titulo-seccion h2 {
+  text-align: center;
+}
+
+main .tabs-options .container .container-tabs .tabs {
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .tabs-options .container .container-tabs .tabs li {
+  margin: 0 5px;
+}
+
+main .tabs-options .container .container-tabs .tabs li a {
+  font-size: 0.75rem;
+  padding: 0 .5rem 1.125rem .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  border-bottom: 2px solid transparent;
+  color: #ebebeb;
+}
+
+main .tabs-options .container .container-tabs .tabs li a:hover {
+  color: #c5a95f;
+  background: #2c2c2c;
+}
+
+main .tabs-options .container .container-tabs .tabs li.active {
+  color: #c5a95f;
+  background: #c5a95f;
+}
+
+main .tabs-options .container .contenido {
+  margin: 0 auto;
+  margin-top: 2.5rem;
+}
+
+main .tabs-options .container .contenido > div {
+  display: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+main .tabs-options .container .contenido .active {
+  display: block;
+}
+/*# sourceMappingURL=sytle.css.map */
